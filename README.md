@@ -15,4 +15,4 @@ Find a torrent infoHash first.
 ## Switching version 
 Work with wrtc [v0.1.0](https://github.com/js-platform/node-webrtc/tree/v0.1.0) and [v0.1.1](https://github.com/js-platform/node-webrtc/tree/v0.1.1).
 
-I recommend to delete and re-install node modules when changing wrtc version to make sure it will his stuff correctly. 
+I recommend to delete and re-install node modules when changing wrtc version to make sure it will build his stuff correctly. 
