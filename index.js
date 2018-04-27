@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 4000;
 
-const WebTorrent = require('./dependencies/webtorrent-master');
+const WebTorrent = require('webtorrent');
 const createTorrent = require('create-torrent');
 const wrtc = require('wrtc');
 
