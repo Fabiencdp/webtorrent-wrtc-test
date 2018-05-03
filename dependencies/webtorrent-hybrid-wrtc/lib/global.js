@@ -1,13 +1,18 @@
 var createTorrent = require('create-torrent')
-var wrtc = require('../../node-webrtc-0.1.1')
+
+// WRTC version
+var wrtc1 = require('../../node-webrtc-0.1.1')
 var wrtc2 = require('../../node-webrtc-0.1.2')
 
 global.WEBTORRENT_ANNOUNCE = createTorrent.announceList
   .map((arr) => arr[0])
   .filter((url) => url.indexOf('wss://') === 0 || url.indexOf('ws://') === 0);
 
-global.WRTC = wrtc;
+global.WRTC = wrtc1;
 
+
+// *
+// Old electron stuff
 // global.WRTC = function () {
 //   var wrtc = wrtc
 //
