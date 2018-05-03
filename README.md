@@ -3,6 +3,8 @@ Just a little test using [wrtc](https://github.com/js-platform/node-webrtc) inst
 
 ## Install
 Clone this repo and install dependencies with `npm install`
+This repo contain a custom webtorrent-hybrid version (without electron), and two versions of wrtc for testing purpose.
+Npm will build binaries of both wrtc modules
 
 ## Use 
 Find a torrent infoHash first. 
@@ -12,6 +14,7 @@ Find a torrent infoHash first.
 - Open http://localhost:4000/request/{infoHash} on another one to start seeding through webRTC. 
 
 ## Switching version 
-Work with wrtc [v0.1.0](https://github.com/js-platform/node-webrtc/tree/v0.1.0) and [v0.1.1](https://github.com/js-platform/node-webrtc/tree/v0.1.1).
-
+Work almost well with wrtc [v0.1.0](https://github.com/js-platform/node-webrtc/tree/v0.1.0) and [v0.1.1](https://github.com/js-platform/node-webrtc/tree/v0.1.1).
+Don't work with wrtc >= 0.1.2
+NPM should have installed and build wrtc version 0.1.1 and 0.1.2, so you can just switch version to test the two versions
 You can change current wrtc version in ./dependencies/webtorrent-hybrid-wrtc/lib/global.js.
