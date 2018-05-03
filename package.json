@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm install --prefix ./dependencies/webtorrent-hybrid-wrtc & npm install --prefix ./dependencies/node-webrtc-0.1.1 & npm install --prefix ./dependencies/node-webrtc-0.1.2",
     "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "create-torrent": "^3.31.0",
-    "express": "^4.16.3",
-    "webtorrent": "^0.99.3",
-    "wrtc": "0.1.0"
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"

@@ -1,0 +1,10 @@
+*\~
+*.swp
+build
+.DS_Store
+node_modules
+package-lock.json
+yarn.lock
+third_party
+npm-debug.log*
+build.log

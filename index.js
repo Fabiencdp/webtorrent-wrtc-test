@@ -2,14 +2,12 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 4000;
 
-const WebTorrent = require('webtorrent');
-const createTorrent = require('create-torrent');
-const wrtc = require('wrtc');
+const WebTorrent = require('./dependencies/webtorrent-hybrid-wrtc');
+
+console.info('WebTorrent version %s', WebTorrent.VERSION);
 
 // *
 // Create webtorrent instance
-global.WRTC = wrtc;
-global.WEBTORRENT_ANNOUNCE = createTorrent.announceList.map(arr => arr[0]);
 const client = new WebTorrent();
 
 let checkInterval = false;
